@@ -1,4 +1,4 @@
-import javaposse.jobdsl.dsl.Jobz
+import javaposse.jobdsl.dsl.Job
 
 pipelineJob('job-dsl-plugin') {
     definition {
@@ -7,3 +7,5 @@ pipelineJob('job-dsl-plugin') {
         }
     }
 }
+
+println org.codehaus.groovy.control.ResolveVisitor.DEFAULT_IMPORTS
