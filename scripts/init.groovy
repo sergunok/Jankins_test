@@ -1,4 +1,4 @@
-import javaposse.jobdsl.dsl.Job
+import javaposse.jobdsl.dsl.Jobz
 
 pipelineJob('job-dsl-plugin') {
     definition {
