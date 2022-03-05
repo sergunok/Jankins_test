@@ -1,5 +1,5 @@
 node ('agent1') {
-    stage('Parallel Demo') {
+    stage('Test') {
         sh 'java -version'
     }
 }
