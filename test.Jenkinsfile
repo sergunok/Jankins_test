@@ -18,6 +18,7 @@ pipeline {
                         ])
                         
                         println sh(script: 'pwd', returnStdout: true)
+                        println sh(script: 'ls -la', returnStdout: true)
                     }
                 }
             }
