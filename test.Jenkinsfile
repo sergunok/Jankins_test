@@ -11,7 +11,7 @@ pipeline {
                     dir('test_dir') {
                         checkout([
                             $class: 'GitSCM',
-                            branches: [[name: master]],
+                            branches: [[name: 'master']],
                             userRemoteConfigs: [[
                                 url: 'https://github.com/rmccue/test-repository.git'
                             ]]
