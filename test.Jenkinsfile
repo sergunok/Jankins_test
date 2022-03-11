@@ -9,6 +9,14 @@ pipeline {
                 echo 'Hello World'
                 script {
                     dir('test_dir') {
+                        checkout([
+                            $class: 'GitSCM',
+                            branches: [[name: master]],
+                            userRemoteConfigs: [[
+                                url: 'https://github.com/rmccue/test-repository.git'
+                            ]]
+                        ])
+                        
                         println sh(script: 'pwd', returnStdout: true)
                     }
                 }
